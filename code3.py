@@ -1,0 +1,1 @@
+print('eu estou com fome' , 3 + 3)
