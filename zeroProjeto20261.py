@@ -1,4 +1,4 @@
-usuario_achado = []
+usuario_achado = []#sldkfjlkdjfklsdjflksdlf
 usuarios = [["Caio" , "caio=123" , False] , ["Higor" , "higor123" , True]]
 usuario_logado = []
 while True:
