@@ -8,5 +8,5 @@ def oi():
     print(f'LOCAL: {time}')
     print(cidade)
 oi()
-print(cidade)
+#print(cidade)
 print(f'GLOBAL: {time}')
