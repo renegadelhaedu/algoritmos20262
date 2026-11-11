@@ -1,5 +1,6 @@
 #principal
 import code145_pacote_funcoes1 as f1
+import code145_pacote_funcoes2 as f2
 
 lista_alunos = []
 
@@ -11,5 +12,7 @@ while True:
         f1.cadastrar(lista_alunos, nome, idade)
     elif resposta == 2:
         f1.listar(lista_alunos)
+    elif resposta == 3:
+        f2.contido(lista_alunos)
 
 

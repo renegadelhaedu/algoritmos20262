@@ -14,7 +14,6 @@ racao = []
 pedidos_compra = []
 
 
-
 while True:
     print("     *****MENU*****\n 1 - Cadastrar\n 2 - Login\n 0 - Encerrar")
     opcao = int(input("Digite a opção desejada: "))
