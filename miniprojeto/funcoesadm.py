@@ -35,3 +35,8 @@ def realizar_venda(vendas, id_prod, cpf):
     qtde = int(input('Digite a quantidade em unidades do produto: '))
     vendas.append([id_prod, cpf, qtde])
     print('Venda realizada com sucesso!\n')
+    return qtde
+
+
+def diminuir_estoque(prods, id_prod, qtde):
+    prods[id_prod][2] = prods[id_prod][2] - qtde

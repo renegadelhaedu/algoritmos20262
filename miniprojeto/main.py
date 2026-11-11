@@ -17,4 +17,5 @@ while True:
         saida_id = adm.buscar_produto(produtos)
         if saida_id:
             cpf = cli.verificar_usuario(clientes)
-            adm.realizar_venda(vendas, saida_id, cpf)
+            qtde_vendida = adm.realizar_venda(vendas, saida_id, cpf)
+            adm.diminuir_estoque(produtos, id_prod, qtde_vendida)
