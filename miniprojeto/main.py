@@ -13,3 +13,8 @@ while True:
         adm.cadastrar_produto(produtos, id_prod)
     elif opcao == 2:
         cli.cadastrar_cliente(clientes)
+    elif opcao == 3:
+        saida_id = adm.buscar_produto(produtos)
+        if saida_id:
+            cpf = cli.verificar_usuario(clientes)
+            adm.realizar_venda(vendas, saida_id, cpf)

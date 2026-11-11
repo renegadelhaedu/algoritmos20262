@@ -2,7 +2,6 @@
 
 def cadastrar_cliente(clientes):
     cpf = input('Digite o CPF do cliente: ')
-    #parei para continuar depois
     while not verificar_cpf_valido(clientes, cpf):
         cpf = input('CPF já cadastrado. Digite outro CPF do cliente: ')
     nome = input('Digite o nome do cliente: ')
@@ -16,3 +15,10 @@ def verificar_cpf_valido(clientes, cpf):
         return True
     else:
         return False
+
+def verificar_usuario(clientes):
+    cpf = input('Digite o cpf do cliente: ')
+    if cpf in clientes:
+        return cpf
+    else:
+        return None
