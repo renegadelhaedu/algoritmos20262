@@ -53,4 +53,4 @@ def somar(numeros:list):
         soma += numero
     print(soma)
 
-somar(numeros='oiiii')
+somar(numeros=[1,2,3,4])

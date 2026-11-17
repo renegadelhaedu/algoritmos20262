@@ -2,6 +2,7 @@
 import funcoesadm as adm
 import funcoescliente as cli
 import graficos as gr
+import funfile as file
 
 clientes = {2342:['renan','rua raminudo bocaiuva','83-298347']}
 produtos = {0:['chip oi',20,90],1:['amd',10,50]}
@@ -31,3 +32,6 @@ while True:
                 adm.diminuir_estoque(produtos, id_prod, qtde_vendida)
     elif opcao == 4:
         gr.exibir_produtos(produtos)
+
+    elif opcao == 5:
+        file.listar_clientes()

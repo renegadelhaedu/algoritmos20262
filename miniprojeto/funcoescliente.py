@@ -1,4 +1,5 @@
 #cliente
+import funfile
 
 def cadastrar_cliente(clientes):
     cpf = input('Digite o CPF do cliente: ')
@@ -8,6 +9,7 @@ def cadastrar_cliente(clientes):
     endereco = input('DIgite o endereco do cliente: ')
     telefone = input('Digite o telefone do cliente: ')
     clientes[cpf] = [nome, endereco, telefone]
+    funfile.salvar_cliente([cpf, nome, endereco, telefone])
     print('Cliente cadastrado com sucesso!\n')
 
 def verificar_cpf_valido(clientes, cpf):
