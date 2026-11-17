@@ -38,5 +38,19 @@ def realizar_venda(vendas, id_prod, cpf):
     return qtde
 
 
-def diminuir_estoque(prods, id_prod, qtde):
+def diminuir_estoque(prods, id_prod, qtde=0):
     prods[id_prod][2] = prods[id_prod][2] - qtde
+
+
+def juntar_casal(pessoa1='rommel', pessoa2='ana livia'):
+    casal = pessoa1 + ' está junto com ' + pessoa2
+    return casal
+
+
+def somar(numeros:list):
+    soma = 0
+    for numero in numeros:
+        soma += numero
+    print(soma)
+
+somar(numeros='oiiii')
