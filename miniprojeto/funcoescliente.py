@@ -24,3 +24,7 @@ def verificar_usuario(clientes):
         return cpf
     else:
         return None
+
+def listar_clientes(clientes):
+    for cpf,dados in clientes.items():
+        print(f'CPF: {cpf} - Nome: {dados[0]}')

@@ -5,6 +5,7 @@ import graficos as gr
 import funfile as file
 
 clientes = {2342:['renan','rua raminudo bocaiuva','83-298347']}
+file.carregar_clientes(clientes)
 produtos = {0:['chip oi',20,90],1:['amd',10,50]}
 vendas = [[1, 2342, 5]]
 id_prod = 1
@@ -35,3 +36,7 @@ while True:
 
     elif opcao == 5:
         file.listar_clientes()
+    elif opcao == 6:
+        file.carregar_clientes(clientes)
+    elif opcao == 7:
+        cli.listar_clientes(clientes)

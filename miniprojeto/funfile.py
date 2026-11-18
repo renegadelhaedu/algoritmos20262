@@ -10,8 +10,10 @@ def listar_clientes():
             print(linha)
 
 def carregar_clientes(clientes):
-    {2342: ['renan', 'rua raminudo bocaiuva', '83-298347']}
+#    {2342: ['renan', 'rua raminudo bocaiuva', '83-298347']}
     with open('clientes.txt', 'r', encoding='utf-8') as arquivo:
         linhas = arquivo.readlines()
         for linha in linhas:
-            print(linha)
+            linha = linha.replace('\n', '')
+            saida = linha.split(';')
+            clientes[saida[0]] = [saida[1], saida[2], saida[3]]
